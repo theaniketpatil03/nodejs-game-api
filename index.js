@@ -1,10 +1,10 @@
-// choices for game
+// choices/inputs for users in game
 let choice = ['rock', 'paper', 'scissor'];
 
 // creating empty object for main api
 let all = {};
 
-// creating initial object for storing score of each player against each other.
+// creating initial object for storing score of each player against each other as it is 4 player game.
 let total = {
     player1: {
         player1: 0,
@@ -34,7 +34,7 @@ let total = {
 
 // main loop for 50 trials of game.
 for (let i = 0; i <= 49; i++) {
-    // creating object for storing individual choice of player
+    // creating object for storing individual random choice/input of players.
     let data = {
             player1: choice[Math.floor(Math.random() * choice.length)],
             player2: choice[Math.floor(Math.random() * choice.length)],
@@ -57,7 +57,7 @@ for (let i = 0; i <= 49; i++) {
     for (let i = 0; i < list.length; i++) {
         // creating additionl for checking each player to each-other.
         for (let k = 0; k < list.length; k++) {
-            // adding the data to total result object only if the player is not same and player wins against any other.
+            // adding the data to total result object by calculating the result for each player only if the player is not same.
             if (list[i] != list[k]) {
                 if (data[list[i]] == 'rock' && data[list[k]] == 'scissor') {
                     total[list[i]][list[k]] = total[list[i]][list[k]] + 1

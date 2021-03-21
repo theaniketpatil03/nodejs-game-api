@@ -1,5 +1,5 @@
 // import api module 
-const result = require('./api');
+const result = require('./index');
 
 // creating  our server
 const express = require('express');
@@ -20,5 +20,5 @@ app.get('/game/start', (req, res) => {
 
 // listening 
 app.listen(port, () => {
-    console.log("your game is on  http://127.0.0.1:8000/game/api");
+    console.log("your game is running on http://127.0.0.1:8000/game/start");
 })
