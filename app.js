@@ -1,4 +1,4 @@
-// import api module 
+// import our created api module from index.js file
 const result = require('./index');
 
 // creating  our server
