@@ -1,0 +1,11 @@
+{
+    "name": "internshipproject",
+    "version": "1.0.0",
+    "description": "this project is based on game called rock,paper,scissor",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "'aniket patil'",
+    "license": "ISC"
+}
