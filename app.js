@@ -1,21 +1,24 @@
 // import api module 
 const result = require('./api');
 
+// creating  our server
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8000;
-// creating  our server
 
 app.get('/', (req, res) => {
     res.send('Home page ')
 })
 
+// our main get request
 app.get('/game/start', (req, res) => {
     api = JSON.stringify(result);
+    //set the Content-Type to application/json
     res.header("Content-Type", 'application/json');
     res.send(api);
 })
 
+// listening 
 app.listen(port, () => {
     console.log("your game is on  http://127.0.0.1:8000/game/api");
 })
