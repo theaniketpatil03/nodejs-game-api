@@ -1,3 +1,6 @@
 
 package-lock.json
 prac.js
+node_modules/
+gitKey
+gitKey.pub

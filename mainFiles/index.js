@@ -7,28 +7,28 @@ let all = {};
 // creating initial object for storing score of each player against each other as it is 4 player game.
 let total = {
     player1: {
-        player1: 0,
+        player1: undefined,
         player2: 0,
         player3: 0,
         player4: 0
     },
     player2: {
         player1: 0,
-        player2: 0,
+        player2: undefined,
         player3: 0,
         player4: 0
     },
     player3: {
         player1: 0,
         player2: 0,
-        player3: 0,
+        player3: undefined,
         player4: 0
     },
     player4: {
         player1: 0,
         player2: 0,
         player3: 0,
-        player4: 0
+        player4: undefined
     }
 }
 
