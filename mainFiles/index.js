@@ -57,13 +57,9 @@ for (let i = 0; i <= 49; i++) {
     for (let i = 0; i < list.length; i++) {
         // creating additionl for checking each player to each-other.
         for (let k = 0; k < list.length; k++) {
-            // adding the data to total result object by calculating the result for each player only if the player is not same.
+            // adding the data to total result object by calculating the result for each player only if the player is not same and player wins against any other player.
             if (list[i] != list[k]) {
-                if (data[list[i]] == 'rock' && data[list[k]] == 'scissor') {
-                    total[list[i]][list[k]] = total[list[i]][list[k]] + 1
-                } else if (data[list[i]] == 'paper' && data[list[k]] == 'rock') {
-                    total[list[i]][list[k]] = total[list[i]][list[k]] + 1
-                } else if (data[list[i]] == 'scissor' && data[list[k]] == 'paper') {
+                if ((data[list[i]] == 'rock' && data[list[k]] == 'scissor') || (data[list[i]] == 'paper' && data[list[k]] == 'rock') || (data[list[i]] == 'scissor' && data[list[k]] == 'paper')) {
                     total[list[i]][list[k]] = total[list[i]][list[k]] + 1
                 }
             }
